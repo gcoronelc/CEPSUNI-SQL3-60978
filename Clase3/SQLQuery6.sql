@@ -11,7 +11,7 @@ go
 
 BACKUP DATABASE educa
 TO Dispositivo01
-with name = 'EDUCA', description = 'Backup completo de la base de datos EDUCA';
+with name = 'EDUCA', description = 'Backup completo de la base de datos EDUCA', INIT;
 go
 
 BACKUP DATABASE edutec
