@@ -1,0 +1,21 @@
+BCP
+-----------------------------------------------
+
+Ejemplo 1
+---------
+
+bcp edutec.dbo.Curso out F:\TMP\DATOS\Curso_A.dat -T -c
+
+
+Ejemplo 2
+---------
+
+bcp edutec.dbo.Curso out F:\TMP\DATOS\Curso_B.dat -c -Usa -Psql
+
+
+Ejemplo 3
+---------
+
+bcp edutec.dbo.Curso2 in d:\bcp\Curso_B.dat -T -c
+
+
