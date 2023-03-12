@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32929.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "ProyectoDemoSSIS", "ProyectoDemoSSIS\ProyectoDemoSSIS.dtproj", "{66AD4FAA-0A45-41E0-A19E-767AE86EE664}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66AD4FAA-0A45-41E0-A19E-767AE86EE664}.Development|Default.ActiveCfg = Development
+		{66AD4FAA-0A45-41E0-A19E-767AE86EE664}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E66E6B1B-95F8-4153-B12E-98ED3C90A98F}
+	EndGlobalSection
+EndGlobal
