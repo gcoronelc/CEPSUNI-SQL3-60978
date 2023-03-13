@@ -1,13 +1,25 @@
 
-select * from edutec..CursoProgramado where IdCiclo='2022-01';
-go
+SELECT * FROM DBO.TIEMPO;
+GO
 
-declare @comando varchar(1000), @ciclo varchar(50);
-set @ciclo = '2022-01';
-set @comando = 'select * from edutec..CursoProgramado where IdCiclo=''' + @ciclo + '''';
-print @comando;
-go
+select CustomerID, CompanyName, ContactName, Phone
+from dbo.Customers
 
-select * from edutec..CursoProgramado where IdCiclo='2022-01'
-go
+
+SELECT 
+	YEAR(O.OrderDate) Anio, MONTH(O.OrderDate) Mes,
+	C.CustomerID, C.CompanyName, O.OrderID, 
+	CONVERT(varchar,O.OrderDate,103) OrderDate,
+	P.ProductName, D.UnitPrice, D.Quantity
+FROM Northwind.dbo.Customers AS C
+JOIN Northwind.dbo.Orders AS O ON C.CustomerID = O.CustomerID
+JOIN Northwind.dbo.[Order Details] AS D ON O.OrderID = D.OrderID
+JOIN Northwind.dbo.Products AS P ON D.ProductID = P.ProductID;
+
+
+select distinct year(OrderDate) anio
+from Orders order by 1 desc;
+
+
+
 
